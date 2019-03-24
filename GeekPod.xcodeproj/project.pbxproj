@@ -11,6 +11,7 @@
 		0F2B2770224808B1001935C4 /* GeekPod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2B2766224808B1001935C4 /* GeekPod.framework */; };
 		0F2B2775224808B1001935C4 /* GeekPodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2B2774224808B1001935C4 /* GeekPodTests.swift */; };
 		0F2B2777224808B1001935C4 /* GeekPod.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F2B2769224808B1001935C4 /* GeekPod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F2B278122480B76001935C4 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2B278022480B76001935C4 /* RoundButton.swift */; };
 		B73172B48A3DC12633083FFA /* Pods_GeekPodTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 938379CE2B399AE27829F2C8 /* Pods_GeekPodTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		0F2B276F224808B1001935C4 /* GeekPodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeekPodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F2B2774224808B1001935C4 /* GeekPodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeekPodTests.swift; sourceTree = "<group>"; };
 		0F2B2776224808B1001935C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F2B278022480B76001935C4 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		4BDF14F880613B790A695A54 /* Pods-GeekPod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeekPod.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeekPod/Pods-GeekPod.release.xcconfig"; sourceTree = "<group>"; };
 		5385D81866F6F9E83221F876 /* Pods_GeekPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeekPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5525468418AE2A210FEBEB51 /* Pods-GeekPodTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeekPodTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeekPodTests/Pods-GeekPodTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				0F2B2769224808B1001935C4 /* GeekPod.h */,
+				0F2B278022480B76001935C4 /* RoundButton.swift */,
 				0F2B276A224808B1001935C4 /* Info.plist */,
 			);
 			path = GeekPod;
@@ -183,6 +186,7 @@
 				TargetAttributes = {
 					0F2B2765224808B1001935C4 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					0F2B276E224808B1001935C4 = {
 						CreatedOnToolsVersion = 10.1;
@@ -298,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F2B278122480B76001935C4 /* RoundButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +451,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7F4A6E7A82ED51FEE4BE3D22 /* Pods-GeekPod.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -463,6 +469,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Maievskyi.GeekPod;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -472,6 +479,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4BDF14F880613B790A695A54 /* Pods-GeekPod.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -498,6 +506,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5525468418AE2A210FEBEB51 /* Pods-GeekPodTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G9SN9CVRUD;
 				INFOPLIST_FILE = GeekPodTests/Info.plist;
@@ -517,6 +526,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EF13BA10242F310381A06071 /* Pods-GeekPodTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G9SN9CVRUD;
 				INFOPLIST_FILE = GeekPodTests/Info.plist;
